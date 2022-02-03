@@ -30,3 +30,53 @@ navLink.forEach((link) =>
     ul.classList.remove("show");
   })
 );
+
+// Stop scrolling when modal is open
+
+        //when modal is open 
+document.querySelector("#project-card-1").addEventListener('click', function() {
+  document.querySelector(".modal").style.display = 'flex';
+  document.querySelector("body").style.overflow = 'hidden';
+  
+});
+
+document.querySelector("#project-card-2").addEventListener('click', function() {
+  document.querySelector(".modal").style.display = 'flex';
+  document.querySelector("body").style.overflow = 'hidden';
+  
+});
+
+document.querySelector("#project-card-3").addEventListener('click', function() {
+  document.querySelector(".modal").style.display = 'flex';
+  document.querySelector("body").style.overflow = 'hidden';
+  
+});
+
+/* when modal is closed */
+document.querySelector("#modal__close-1").addEventListener('click', function() {
+  document.querySelector(".modal").style.display = 'none';
+  document.querySelector("body").style.overflow = 'visible';
+});
+
+document.querySelector("#modal__close-2").addEventListener('click', function() {
+  document.querySelector(".modal").style.display = 'none';
+  document.querySelector("body").style.overflow = 'visible';
+});
+
+document.querySelector("#modal__close-3").addEventListener('click', function() {
+  document.querySelector(".modal").style.display = 'none';
+  document.querySelector("body").style.overflow = 'visible';
+});
+
+
+//Navigation Highlight while scrolling
+
+// $(document).ready(function(){
+
+//   $("section").mouseenter(function(){
+//      var id = $(this).attr('id');
+//      $('a').removeClass('active');
+//      $("[href=#"+id+"]").addClass('active');
+//   });
+
+// });

@@ -8,6 +8,9 @@
     <!--CSS Styles -->
     <link rel="stylesheet" href="css/style.css" />
 
+    <!--SASS Transitions -->
+    <!-- <link rel="stylesheet" href="css/transition.css" /> -->
+
     <!-- Favicons -->
     <link
       rel="apple-touch-icon"
@@ -20,30 +23,44 @@
       sizes="32x32"
       href="assets/icons/favicon-32x32.png"
     />
+    
+    
 
     <!-- Animate CSS CDN -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
-    <title>Saurabh Dhuri | UX Designer</title>
+    <title>Saurabh Dhuri | Portfolio</title>
   </head>
 
   <body>
     
     <!-- Navbar -->
     <nav>
-              <img
-                src=""
+              <a href="">
+                <img
+                src="img/sa-dhu-logo.png"
                 alt="SAURABH DHURI"
-                class="saurabh-logo"
+                class="logo_sadhu"
               />
-      <ul class="navigation">
-        <li><a href="#work" class="nav-link">Work</a></li>
-        <li><a href="#about" class="nav-link">About</a></li>
-        <li><a href="#contact" class="nav-link">Contact</a></li>
-        <li><a href="#resume" class="nav-link">Resume</a></li>
-      </ul>
+<!--             
+              <img
+                src="img/saurabh-dhuri-logo 1.png"
+                alt="SAURABH DHURI"
+                class="logo_saurabh"
+              /> -->
+            </a>
+              
+              
+      
+        <ul class="navigation">
+          <li><a href="#work" class="nav-link">Work</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+          <li><a href="#resume" class="nav-link">Resume</a></li>
+        </ul>
+      
       <button class="burger-menu" id="burger-menu">
         <ion-icon class="bars" name="menu-outline"></ion-icon>
       </button>
@@ -51,76 +68,85 @@
 
     
 
+    
+
     <!-- Work Section (Skills section) -->
 
     <section class="work-section" id="work">
+      
       <div class="work-container">
         <div class="intro">
-          <h1 class="intro-header">Greetings visitor!</h1>
+          <br>
+          <br>
+          <br>
+          <br>
+          <h1 class="intro-header">Greetings Visitor!</h1>
           <p class="into-text">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia sed
-            dolorem fugit sapiente porro veniam pariatur dolore nostrum delectus
-            inventore tempore minus nemo, iste ullam illo laboriosam maiores
-            repudiandae quos!
+            I'm <b class="saurabh-dhuri">Saurabh Dhuri</b>, a self-taught UX Designer & Front-end Developer residing in Navi Mumbai, India.
           </p>
         </div>
         
 
         <div class="work-wrapper">
-          <div class="work animate__animated animate__shakeX">
+
+
+           <!-- 1st Project -->
+
+        <a href="#first-project-modal" class="project-card" id="project-card-1">
+           <div class="work animate__animated animate__shakeX" id="first-project">
             <div class="project-name-container">
             
-              <h2 class="project-title">Project Name</h2>
+              <h2 class="project-title"></h2>
+              <p class="project-type">(UX Case Study)</p>
             
             </div>
-            
-            <!-- <div>
-              <p class="project-text">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia sed
-                dolorem fugit sapiente porro veniam pariatur dolore nostrum delectus
-                inventore tempore minus nemo, iste ullam illo laboriosam maiores
-                repudiandae quos!
-              </p>
-            </div> -->
             
             <div class="project-logo-container">
-              <img
-                src=""
-                alt="Project Logo/Image"
-                loading="lazy"
-                class="project-logo"
-              />
+              
+            </div>
+          </div>
+        </a>
+
+           <!-- 2nd Project -->
+
+          <a href="#second-project-modal" class="project-card" id="project-card-2">
+          <div class="work animate__animated animate__shakeX" id="second-project" >
+        
+            
+            <div class="project-logo-container">
+              
+              
             </div>
 
-          </div>
-
-          <div class="work animate__animated animate__shakeX">
             <div class="project-name-container">
             
-              <h2 class="project-title">Project Name</h2>
+              <h2 class="project-title">VegNonVeg</h2>
+              <p class="project-type">(Conceptual UI Design)</p>
             
             </div>
+          </div>
+        </a>
+
+
+          <!-- 3rd Project -->
+
+        <a href="#third-project-modal" class="project-card" id="project-card-3">
+          <div class="work animate__animated animate__shakeX" id="third-project">
+            <div class="project-name-container">
             
-            <!-- <div>
-              <p class="project-text">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia sed
-                dolorem fugit sapiente porro veniam pariatur dolore nostrum delectus
-                inventore tempore minus nemo, iste ullam illo laboriosam maiores
-                repudiandae quos!
-              </p>
-            </div> -->
+              <h2 class="project-title">PlaceMe</h2>
+              <p class="project-type">(ASP.NET Web Application)</p>
+              
+            
+            </div>
+          
             
             <div class="project-logo-container">
-              <img
-                src=""
-                alt="Project Logo/Image"
-                loading="lazy"
-                class="project-logo"
-              />
+              
             </div>
-
           </div>
-
+          </a>
+                
           
         </div>
 
@@ -128,9 +154,9 @@
     </section>
 
 
-
     <!-- About (Hero Section) -->
 
+    
     <section class="about-section" id="about">
       <img
         src=""
@@ -139,19 +165,39 @@
         class="hero-img"
       />
       <div class="bio animate__animated animate__shakeX">
-        <h1 class="bio-title">About Me</h1>
+        <h1 class="bio-title">About me</h1>
         <p class="bio-text">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia sed
-          dolorem fugit sapiente porro veniam pariatur dolore nostrum delectus
-          inventore tempore minus nemo, iste ullam illo laboriosam maiores
-          repudiandae quos!
+          Hello there!
+          <br>
+          My name is <b class="saurabh-dhuri">Saurabh Dhuri</b>. 
+          <br>
+          I'm currently looking forward to gaining some 
+          knowledge and industry experience as a UX designer. 
+          <br>
+          My greatest desire is to begin my career in UX and work, thrive, and 
+          survive in this industry. 
+          <br>
+          
         </p>
       </div>
     </section>
 
-    <!-- More about -->
+    <!-- More about me -->
 
-    
+    <section class="more-about-section" id="more-about">
+      <div class="more-bio animate__animated animate__shakeX">
+        <h1 class="more-bio-title">More about me...</h1>
+        <p class="more-bio-text">
+          I'm an MCA(Master of Computer Applications) graduate from 
+          SIES College of Management Studies, Nerul, India.
+           
+          <br>
+          If you want to learn more about me then you can check out the below contact section... 
+          <br>
+          
+        </p>
+      </div>
+    </section>
 
     
 
@@ -160,33 +206,198 @@
 
     <!-- Contact section -->
 
+    
     <section class="contact-section" id="contact">
-      
+      <br>
+      <br>
+      <br>
+      <br>
       <div class="contact-container">
         <div class="item-a">
-        <h2 class="contact-title">Say hi! :</h2>
-        
-        <ul class="">
-          <li class="contact-text"><a href="">Lorem ipsum dolor sit amet,!</a></li>
-          <li class="contact-text"><a href="">Lorem ipsum dolor sit amet,!</a></li>
-        </ul>
+          
+          <div class="item-aa">
+            <h2 class="contact-title">Say hi :</h2>
+          </div>
+          
+          <div class="item-ab">
+            <ul class="">
+              <li class="contact-text"><a href="">personal email</a></li>
+              <li class="contact-text"><a href="">phone number</a></li>
+            </ul>
+          </div>
+
         </div>
         
         <div class="item-b">
-        <h2 class="contact-title">Connect with me :</h2>
 
-        <ul class="">
-          <li class="contact-text"><a href="">Lorem ipsum dolor sit amet,!</a></li>
-          <li class="contact-text"><a href="">Lorem ipsum dolor sit amet,!</a></li>
-          <li class="contact-text"><a href="">Lorem ipsum dolor sit amet,!</a></li>
-        </ul>
+          <div class="item-ba">
+            <h2 class="contact-title">Connect with me :</h2>
+          </div>
+
+          <div class="item-bb">
+            <ul class="">
+              <li class="contact-text"><a href="">LinkedIn</a></li>
+              <li class="contact-text"><a href="">Behance</a></li>
+              <li class="contact-text"><a href="">Instagram</a></li>
+            </ul>
+          </div>
+
         </div>
       </div>
     </section>
 
-    <!-- Social accounts - Fixed to the right -->
+    <!-- Thanks for visiting -->
 
+  <section class="thanks">
+    <h2 class="thank-you-title"> Thank you for visiting.&nbsp; Have a Great Day &#128153	</h2>
+
+  </section>
     
+    
+        <!-- Modal Section -->
+
+        <!-- 1st Project Modal -->
+
+        <div id="first-project-modal" class="modal">
+          <div class="modal__content">
+              <h1>UX Case Study</h1>
+      
+              <p>
+                  You can use the :target pseudo-class to create a modals with Zero JavaScript. Enjoy!
+              </p>
+      
+              <a href="#" class="modal__close" id="modal__close-1">&#10060;</a>
+              
+          </div>
+        </div>
+
+
+        
+          <!-- 2nd Project Modal  -->
+              
+          <div id="second-project-modal" class="modal">
+            <div class="modal-dialog">
+              <div class="modal__content">
+                <div class="modal-header">
+                  <h1 class="project-title">VegNonVeg </h1>
+        
+                    <p>
+                      Conceptual UI Design | 2021
+                    </p>
+                </div>
+                
+                <div class="modal-body">
+                  <div class="project-content-first-box">
+                    <div class="project-description">
+                      <h2>Description:</h2>
+                      
+                      <p>This is a conceptual mobile design project of vegnonveg.com.
+                        <br>
+                        VegNonVeg is India’s first multi-brand sneaker store, based in Delhi. 
+                        <br>
+                        VegNonVeg carries a heavily curated selection of all kinds of sneakers 
+                        ranging from classic and heritage models to their modern tech-infused 
+                        counterparts, and limited edition or hard to find collaborations across brands. 
+                        <br>
+                        They provide customers with the unique opportunity to shop multiple brands under one roof.
+                        </p>
+                        <br>
+                        <br>
+                        <h2>The Problem:</h2>
+                        <p>Vegnonveg only has an online website and a retail store for their customers to shop multiple 
+                          brands under one roof. They don’t have a mobile app for their customers.
+                          </p>
+                    </div>
+                    <div class="project-logo">
+                      <img
+                      src="img/onboarding.png"
+                      alt="onboarding"
+                      loading="lazy"
+                      class="vegnonveg-img"
+                    />
+                    </div>
+                  </div>
+  
+                  <div class="project-content-second-box">
+                    
+                    <div class="project-solution">
+                      <h2>Solution:</h2>
+                      <p>This is my conceptual design of vegnonveg mobile app for android & iOS devices.</p>
+                    </div>
+                    <div class="project-process">
+                      <h2>Process:</h2>
+                      <p>Research > Prototype > Design > Add Interactions > Test > Research > Design & Improve</p>
+                                          </div>
+                  </div>
+                </div>
+
+
+        
+                <a href="#" class="modal__close" id="modal__close-2">&#10060;</a>
+                
+            </div>
+          </div>
+          </div>
+
+
+
+
+          <!-- 3rd Project Modal  -->
+              
+          <div id="third-project-modal" class="modal">
+                
+            <div class="modal-dialog">
+              <div class="modal__content">
+                <div class="modal-header">
+                  <h1 class="project-title">Place Me</h1>
+        
+                    <p>
+                      ASP.NET Web Application | 2021
+                    </p>
+                </div>
+                
+                <div class="modal-body">
+                  <div class="project-content-first-box">
+                    <div class="project-description">
+                      <h2>Description:</h2>
+                      <p>
+                        </p>
+                    </div>
+                    <div class="project-logo">
+                      <img
+                      src="img/onboarding.png"
+                      alt="onboarding"
+                      loading="lazy"
+                      class="vegnonveg-img"
+                    />
+                    </div>
+                  </div>
+  
+                  <div class="project-content-second-box">
+                    <div class="project-problem">
+                      <h2>The Problem:</h2>
+                      <p> under one roof. They don’t have a mobile app for their customers.
+                        </p>
+                    </div>
+                    <div class="project-solution">
+                      <h2>Solution:</h2>
+                      <p>This is my conceptual design of vegnonveg mobile app for android & iOS devices.</p>
+                    </div>
+                    <div class="project-process">
+                      <h2>Process:</h2>
+                      <p>Research > Prototype > Design > Add Interactions > Test > Research > Design & Improve</p>
+                    </div>
+                  </div>
+                </div>
+          
+                  <a href="#" class="modal__close" id="modal__close-3">&#10060;</a>
+                  
+              </div>
+            </div>
+              
+          </div>
+
+
 
     <!-- Scroll to top -->
 
@@ -201,11 +412,11 @@
     <!-- Footer section -->
 
     <footer>
-      <p class="copy">&copy; Copyright 2021</p>
+      <p class="copy">&copy; Copyright 2022</p>
       <p class="copy">
-        Built with &#x2661; by
+        Designed & Created by
         <a href="" target="_blank"
-          >Saurabh Dhuri</a
+          ><b class="saurabh-dhuri">Saurabh Dhuri</b></a
         >
       </p>
     </footer>
@@ -223,5 +434,7 @@
       nomodule
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
     ></script>
+
+    
   </body>
 </html>

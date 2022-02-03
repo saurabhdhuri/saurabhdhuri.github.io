@@ -1,10 +1,13 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,900;1,700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap');
+
+
 
 
 
 /* Variables */
 :root {
-  --font-family: "Roboto", sans-serf;
+  --font-family:'Montserrat', sans-serif;
   --normal-font: 400;
   --bold-font: 700;
   --bolder-font: 900;
@@ -44,12 +47,100 @@ a:hover {
   color: var(--secondary-color);
 }
 
+
+
 body {
+  
   font-family: var(--font-family);
   background-color: var(--bg-color);
   color: #000000;
   
 }
+
+.active, .saurabh-dhuri {
+  color: #034AFF;
+}
+
+
+
+    /*Font Sizes and font families  */
+
+    h1,h2,h3{
+      font-family: 'Josefin Sans', sans-serif;;
+      letter-spacing: 0px;
+      
+    }
+
+    .intro-header {
+      font-size: 3rem;
+      }
+    .project-title{
+      font-size: 2rem;
+      
+    }
+    .bio-title{
+      font-size: 2rem;
+    }
+    .more-bio-title{
+      font-size: 2rem;
+    }
+    .contact-title{
+      font-size: 2rem;
+    }
+    .thank-you-title{
+      font-size: 1.5rem;
+    }
+
+    @media screen and (max-width: 912px) {
+      /*changes reflects on screen with a width of 912px and below*/
+      .intro-header {
+        font-size: 2rem;
+        
+        }
+      .project-title{
+        font-size: 1.5rem;
+      }
+      .bio-title{
+        font-size: 1.5rem;
+      }
+      .more-bio-title{
+        font-size: 1.5rem;
+      }
+      .contact-title{
+        font-size: 1.5rem;
+      }
+      .thank-you-title{
+        font-size: 1rem;
+      }
+
+      }
+
+    @media screen and (max-width: 768px) {
+      .intro-header {
+        font-size: 2rem;
+        
+        }
+      .project-title{
+        font-size: 1.5rem;
+      }
+      .bio-title{
+        font-size: 1.5rem;
+      }
+      .more-bio-title{
+        font-size: 1.5rem;
+      }
+      .contact-title{
+        font-size: 1.5rem;
+      }
+      .thank-you-title{
+        font-size: 1rem;
+      }
+
+      }
+
+    
+
+
 
     /* Navbar */
     
@@ -64,17 +155,126 @@ body {
         padding: 1.5rem 3.5rem;
         background-color: var(--bg-color);
         box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+        height: auto;
       }
     
-      nav h1 {
-        color: var(--primary-color);
+
+      nav .logo_sadhu{
+        width: auto;
+        height: 2.8312rem;
+        position: absolute;
+        top: 0%;
+        margin-top: 1%;
+        margin-left: 5%;
+        
       }
+
+      nav .logo_saurabh{
+        width: auto;
+        height: 1.8312rem;
+        position: absolute;
+        top: 0%;
+        margin-top: 1%;
+        margin-left: 33.5%;
+        opacity: 0;
+        cursor:default;
       
-      nav a {
+      }
+
+      @media screen and (max-width: 912px) {
+        nav .logo_sadhu{
+          width: auto;
+          height: 2.8312rem;
+          margin-top: 2rem;
+          margin-left: 2rem;
+          
+        }  
+        nav .logo_saurabh{
+
+          width: auto;
+          height: 2.8312rem;
+          margin-top: 2rem;
+          margin-left: 28%;
+        }
+        }
+  
+      @media screen and (max-width: 768px) {
+        nav .logo_sadhu{
+          width: auto;
+          height: 2.8312rem;
+          margin-top: 2rem;
+          margin-left: 2rem;
+          
+        }  
+        nav .logo_saurabh{
+
+          width: auto;
+          height: 2.8312rem;
+          margin-top: 2rem;
+          margin-left: 13rem;;
+        }
+  
+        }
+  
+      @media screen and (max-width: 540px) {
+        nav .logo_sadhu{
+          width: auto;
+          height: 1.8312rem;
+          margin-top: 2rem;
+          margin-left: 1rem;
+        
+        }  
+        nav .logo_saurabh{
+
+          width: auto;
+          height: 1.3312rem;
+          margin-top: 2rem;
+          margin-left: 28%;
+        }
+      }
+
+      @media screen and (max-width: 375px) {
+        nav .logo_sadhu{
+          width: auto;
+          height: 1.8312rem;
+          margin-top: 2rem;
+          margin-left: 0rem;
+        
+        }  
+        nav .logo_saurabh{
+
+          width: auto;
+          height: 1.4rem;
+          margin-top: 2rem;
+          margin-left: 24%;
+        }
+      }
+
+
+      .logo_sadhu:hover + .logo_saurabh {
+          
+          animation: fadeIn 1s;
+          animation-delay: 0.01s;
+          animation-fill-mode: forwards;
+        
+      }
+
+      @keyframes fadeIn {
+        from { opacity: 0; }
+        to { opacity: 1; }
+    }
+
+    @keyframes fadeOut {
+      from { opacity: 1; }
+      to { opacity: 0; }
+  }
+      
+      
+      nav li a {
         color: var(--primary-color);
         transition: var(--transition);
       }
-      nav a:hover {
+      nav li a:hover {
         color: var(--secondary-color);
         border-bottom: 2px solid var(--secondary-color);
       }
@@ -136,30 +336,69 @@ body {
 
       /* Work (Skills) section */
 
-    .work-container {
-
-      display: grid;
-      row-gap: 50px;
-    }
+    
     
     .work-wrapper {
       display: grid;
       row-gap: 60px;
     }
-    
-    .project-name-container{
+  
+
+    .project-name-container, .project-logo-container{
       width: 50%;
       display: flex;
       justify-content: center;
       align-items: center;
+      margin: -9px;
+      border-radius: 6px;
+      flex-direction: column;
+      gap: 1rem;
     }
 
-    .project-logo-container{
-      width: 50%;
+    /* .blur {
+      background: #ffffff;
+      opacity: 0;
+      height:100%;
+      width:100%;
       display: flex;
-      justify-content: center;
       align-items: center;
+      justify-content: center;
+      flex-flow: column;
+      gap: 1rem;
+      border-radius: 6px;
+  } */
 
+  
+
+  #second-project .project-logo-container{
+    background-image: url("../img/project-1.png");
+    background-size: 104%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    
+  }
+  #third-project .project-logo-container{
+    background-image: url("../img/project-img.jpg");
+    background-size: 104%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    
+  }
+
+  #project-card-1 .work{
+    display: none;
+  }
+
+    #first-project .project-name-container{
+      background-color: #063ECE;
+    }
+
+    #second-project .project-name-container{
+      background-color: #00ba00;
+    }
+
+    #third-project .project-name-container{
+      background-color: #7603c9;
     }
 
     .work-section {
@@ -169,7 +408,6 @@ body {
       max-width: 68.75rem;
       margin: auto;
       text-align: center;
-      margin-top: 2.5rem;
       border: 2px solid white;
     }
     
@@ -194,14 +432,38 @@ body {
       width: 68.75rem;
       padding: 0.625rem;
       border-radius: 6px;
+      box-shadow: 0px 0px 4px 0px var(--primary-shadow);
+
+    }
+
+    
+    
+  @media screen and (max-width: 2560px) {
+    
+    .project-card:hover{
+      transform: scale(1.03);
+      text-decoration: none;
+      color: var(--primary-color);
       box-shadow: 0px 2px 15px 2px var(--primary-shadow);
+      border-radius: 6px;
+    }
+
+    
+
     }
 
     @media screen and (max-width: 912px) {
-      /*changes reflects on screen with a width of 912px and below*/
+      .project-card:hover{
+        transform: scale(1.03);
+        text-decoration: none;
+        box-shadow: 0px 0px 0px 0px var(--primary-shadow);
+        border-radius: 6px;
+      }
+      
       .work {
-        width: 80%;
+        width: 45rem;
         margin: auto;
+        height: 13rem;
         
         }
       }
@@ -209,7 +471,7 @@ body {
     @media screen and (max-width: 768px) {
       /*changes reflects on screen with a width of 768px and below*/
       .work {
-        width: 80%;
+        width: 95%;
         margin: auto;
         }
 
@@ -218,11 +480,115 @@ body {
     @media screen and (max-width: 540px) {
       /*changes reflects on screen with a width of 540px and below*/
       .work {
-        width: 80%;
-        margin: auto;
+        flex-direction: column;
+        height: 20rem;
+        width: 17rem;
+        justify-content: space-between;
         }
 
+        #second-project .project-logo-container, #third-project .project-logo-container{
+          /* visibility: hidden; */
+          height: 50%;
+          width: auto;
+          background-size: 100%;
+          
+        }
+
+        .project-name-container{
+          
+          width: auto;
+          height: 50%;
+          flex-direction: column;
+          background-size: 20%;
+        }
+        
+
     }
+
+
+    /* Modal for Work Section */
+
+        
+
+        .modal {
+          visibility: hidden;
+          opacity: 0;
+          position: absolute;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          display: flex;
+          /* margin: auto; */
+          /* align-items: center; */
+          justify-content: center;
+          background-color: rgba(54, 54, 54, 0.94);
+          /* background-size: cover; */
+          transition: all 0.8s;
+
+          
+        }
+
+        .modal:target{
+          visibility: visible;
+          opacity: 1;
+        }
+
+        .modal-header{
+          display: flex;
+          align-items: center;
+          flex-direction: column;
+          gap: 0.4rem;
+        }
+
+        .modal-body{
+          max-height: calc(100vh - 220px);
+          overflow-y: auto;
+          margin-top: 1rem;
+          padding: 2em 2em;
+          display: flex;
+          flex-direction: column;
+      }
+
+        .modal__content {
+          margin-top: 7%;
+          border-radius: 6px;
+          position: relative;
+          width: 1000px;
+          max-width: 100%;
+          background: #fff;
+          padding: 2em 2em;
+        }
+
+        .modal__close {
+          position: absolute;
+          top: 10px;
+          right: 10px;
+          color: #585858;
+          text-decoration: none;
+          font-size: 25px;
+        }
+
+        .project-content-first-box{
+          display: flex;
+          flex-direction: row;
+          text-align: start;
+          column-gap: 10rem;
+          padding: 2em 2em;
+        }
+
+        .project-content-second-box{
+          display: flex;
+          flex-direction: column;
+          column-gap: 1rem;
+          padding: 2em 2em;
+        }
+
+        .vegnonveg-img{
+          height: auto;
+          width: 10rem;
+          /* border: 1px solid black; */
+        }
 
 
     /* About (Hero Section) */
@@ -249,10 +615,12 @@ body {
         border-radius: 6px;
         box-shadow: 0px 2px 15px 2px var(--primary-shadow);
         margin-right: 1rem;
+        
       }
       
       .bio h1 {
         padding: 0.5rem 5%;
+        text-align: center;
       }
       
       .bio p {
@@ -261,14 +629,131 @@ body {
       }
 
 
-      
+      @media screen and (max-width: 912px) {
+        /*changes reflects on screen with a width of 912px and below*/
+        .bio {
+          
+          margin-right: 4rem;
+          
+          }
+
+          .hero-img {
+          
+            margin-left: 4rem;
+          }
+
+        }
+  
+      @media screen and (max-width: 768px) {
+        /*changes reflects on screen with a width of 768px and below*/
+        .bio {
+          
+          margin-right: 4rem;
+          }
+
+          .hero-img{
+
+            margin-left: 4rem;
+          }
+          
+          
+        }
+  
+      @media screen and (max-width: 540px) {
+        /*changes reflects on screen with a width of 540px and below*/
+
+          .about-section{
+            flex-direction: column;
+          }
+
+          .bio {
+          
+          width: 80%;
+          margin: auto;
+          }
+
+          .hero-img{
+
+            width: auto;
+            margin: auto;
+            margin-top: 5rem;
+          }
+
+
+          
+  
+      }
 
 
 
     /* More about */
 
+    .more-about-section {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      max-width: 68.75rem;
+      margin: auto;
+      
+    }
+  
+    /* .hero-img {
+      height: 37.5rem;
+      width: 37.5rem;
+      margin-top: 10rem;
+      margin-left: 1rem;
+    }
+     */
+
+    .more-bio {
+      width: auto;
+      margin: 10px;
+      padding: 0.625rem;
+      border-radius: 6px;
+      box-shadow: 0px 2px 15px 2px var(--primary-shadow);
+      /* margin-right: 1rem; */
+      
+    }
     
+    .more-bio h1 {
+      padding: 0.5rem 5%;
+      text-align: center;
+    }
     
+    .more-bio p {
+      line-height: var(--line-height);
+      padding: 0.5rem 5%;
+    }
+    
+
+    @media screen and (max-width: 912px) {
+      /*changes reflects on screen with a width of 540px and below*/
+
+        .more-bio {        
+        width: 80%;
+        margin: 1rem;
+
+        }
+
+    }
+
+    @media screen and (max-width: 540px) {
+      /*changes reflects on screen with a width of 540px and below*/
+
+        .more-about-section{
+          margin-top: 4rem;
+        }
+
+        .more-bio {
+        
+        width: 80%;
+        margin: auto;
+        }
+
+    }
+
+
+
 
     /* Projects section */
 
@@ -279,34 +764,40 @@ body {
     .contact-container{
       display: grid;
       row-gap: 4rem;
-      margin-bottom: 5rem ;
-      
+      margin-bottom: 2rem;
+      /* margin-top: 4rem; */
+        
     }
 
-    .contact-title{
-
-      /* display: inline-block; */
-      padding: 0rem 10%;
-
+    .item-a, .item-b{
+      display: grid;
+      justify-items: center;
     }
 
-    .item-a .contact-text{
+    .item-a .contact-text, .item-b .contact-text , .item-a .contact-title, .item-b .contact-title{
     
-      padding: 1rem 20%;
+      padding: 1rem 0%;
 
     }
 
-    .item-b .contact-text{
-    
-      padding: 1rem 30%;
+    @media screen and (max-width: 540px) {
+      /*changes reflects on screen with a width of 540px and below*/
 
+      .contact-container{
+        
+        margin-top: 5rem;
+          
+      }
     }
 
    
     
 
-    /* Social accounts - Fixed to the right */
-
+    /* thanks for visiting  */
+    .thanks{
+      margin-top: 4rem;
+      text-align: center;
+    }
     
     /* Scroll to top */
 
@@ -327,8 +818,9 @@ body {
     footer {
       background-color: var(--bg-color);
       padding: 1.25rem;
-      text-align: center;
+      text-align: left;
       margin: 2rem 0 0;
+      font-size: 12px;
     }    
 
   
