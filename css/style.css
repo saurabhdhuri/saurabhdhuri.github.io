@@ -66,10 +66,11 @@ body {
     /*Font Sizes and font families  */
 
     h1,h2,h3{
-      font-family: 'Josefin Sans', sans-serif;;
+      font-family: 'Josefin Sans', sans-serif;
       letter-spacing: 0px;
       
     }
+    
 
     .intro-header {
       font-size: 3rem;
@@ -89,6 +90,10 @@ body {
     }
     .thank-you-title{
       font-size: 1.5rem;
+    }
+    figcaption{
+      font-size:smaller;
+      text-align: center;
     }
 
     @media screen and (max-width: 912px) {
@@ -340,7 +345,8 @@ body {
     
     .work-wrapper {
       display: grid;
-      row-gap: 60px;
+      row-gap: 4rem;
+      margin-top: 4rem;
     }
   
     
@@ -353,32 +359,30 @@ body {
       border-radius: 6px;
       flex-direction: column;
       gap: 1rem;
+      color: #ffffff;
+      /* background-color: rgba(0, 0, 0, 1); */
+      
     }
 
-    /* .blur {
-      background: #ffffff;
-      opacity: 0;
-      height:100%;
-      width:100%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-flow: column;
-      gap: 1rem;
-      border-radius: 6px;
-  } */
+    
 
-  
+  #first-project .project-logo-container{
+    background-image: url("../img/behance/behance-logo.png");
+    background-size: 104%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    
+  }
 
   #second-project .project-logo-container{
-    background-image: url("../img/project-1.png");
+    background-image: url("../img/vegnonveg/project-1.png");
     background-size: 104%;
     background-repeat: no-repeat;
     background-position: center center;
     
   }
   #third-project .project-logo-container{
-    background-image: url("../img/project-img.jpg");
+    background-image: url("../img/placeme/project-img.jpg");
     background-size: 104%;
     background-repeat: no-repeat;
     background-position: center center;
@@ -386,20 +390,22 @@ body {
   }
 
   #project-card-1 .work{
-    display: none;
+    /* display: none; */
   }
 
-    #first-project .project-name-container{
-      background-color: #063ECE;
-    }
+    /* #first-project .project-name-container,
+    #second-project .project-name-container,
+    #third-project .project-name-container{
+      background-color: #034AFF;
+    } */
 
-    #second-project .project-name-container{
+    /* {
       background-color: #00ba00;
     }
 
-    #third-project .project-name-container{
+    {
       background-color: #7603c9;
-    }
+    } */
 
     .work-section {
       display: flex;
@@ -433,6 +439,7 @@ body {
       padding: 0.625rem;
       border-radius: 6px;
       box-shadow: 0px 0px 4px 0px var(--primary-shadow);
+      background-color: #034AFF;
 
     }
 
@@ -448,7 +455,15 @@ body {
       border-radius: 6px;
     }
 
+   
+    @media screen and (max-width: 1024px) {
     
+      .work {
+        width: 60rem;
+        margin: auto;
+        height: 17rem;
+        
+        }
 
     }
 
@@ -464,6 +479,8 @@ body {
         width: 45rem;
         margin: auto;
         height: 13rem;
+        box-shadow: 0px 2px 15px 2px var(--primary-shadow);
+
         
         }
       }
@@ -477,25 +494,33 @@ body {
 
       }
 
+      @media screen and (max-width: 640px) {
+        .work {
+          width: 38rem;
+          margin: auto;
+          height: 11rem;
+          }
+  
+        }
+
     @media screen and (max-width: 540px) {
       /*changes reflects on screen with a width of 540px and below*/
       .work {
         flex-direction: column;
-        height: 20rem;
-        width: 17rem;
+        height: 25rem;
+        width: 20rem;
         justify-content: space-between;
         }
 
-        #second-project .project-logo-container, #third-project .project-logo-container{
+        #first-project .project-logo-container,#second-project .project-logo-container, #third-project .project-logo-container{
           /* visibility: hidden; */
           height: 50%;
           width: auto;
-          background-size: 100%;
+          background-size: 106%;
           
         }
 
         .project-name-container{
-          
           width: auto;
           height: 50%;
           flex-direction: column;
@@ -539,6 +564,7 @@ body {
           align-items: center;
           flex-direction: column;
           gap: 0.4rem;
+          text-align: center;
         }
 
         .modal-body{
@@ -554,7 +580,7 @@ body {
           margin-top: 7%;
           border-radius: 6px;
           position: relative;
-          width: 1000px;
+          width: 1100px;
           max-width: 100%;
           background: #fff;
           padding: 2em 2em;
@@ -569,26 +595,418 @@ body {
           font-size: 25px;
         }
 
-        .project-content-first-box{
+        .project-content-row{
           display: flex;
           flex-direction: row;
           text-align: start;
-          column-gap: 10rem;
+          column-gap: 4rem;
           padding: 2em 2em;
+          justify-content: center;
         }
 
-        .project-content-second-box{
+        .project-modal-text{
           display: flex;
+          /* align-items: center; */
           flex-direction: column;
-          column-gap: 1rem;
-          padding: 2em 2em;
+          justify-content: center;
+        }
+        #first-project-modal .project-content-row {
+          flex-direction: column;
+          row-gap: 2rem;
+          align-items: center;
+          text-align: center;
+          margin-bottom: 2rem;
+        }
+        
+        #first-project-modal .project-modal-img{
+          display: flex;
+          flex-direction: row;
+          column-gap: 2rem;
+          justify-content: center;
+        }
+        
+        .behance-img{
+          width: 20rem;
+          margin: auto;
+          height: auto;
+        }
+        #landing-page-row .behance-img{
+          width: 18rem;
+          margin: auto;
+          height: auto;
+        }
+        #desktop-icon-row .behance-img{
+          width: 38rem;
+          margin: auto;
+          height: auto;
         }
 
-        .vegnonveg-img{
+        .vegnonveg-img,#vegnonveg-result-screen, #vegnonveg-product-screen,#vegnonveg-home-screen{
           height: auto;
-          width: 10rem;
+          width: 18rem;
           /* border: 1px solid black; */
         }
+
+        #vegnonveg-login-screen{
+          height: auto;
+          width: 22.5rem;
+        }
+        #vegnonveg-reg-screen,#vegnonveg-upi-screen,#vegnonveg-card-screen{
+          height: auto;
+          width: 22rem;
+        }
+
+        #placeme-logo-row .placeme-img{
+          height: 20rem;
+          width: auto;
+        }
+        .placeme-img{
+          height: 18rem;
+          width: auto;
+        }
+        
+        
+
+          @media screen and (max-width: 1024px) {
+            
+            .modal{
+              flex-direction: column;
+              align-items: center;
+            }
+            .modal-body{
+              max-height: calc(100vh - 230px);
+            } 
+            .modal__content {
+              width: 950px;
+            }
+            .vegnonveg-img,#vegnonveg-result-screen, #vegnonveg-product-screen,#vegnonveg-home-screen{
+              height: auto;
+              width: 15rem;
+            }
+    
+            #vegnonveg-login-screen{
+              height: auto;
+              width: 19.5rem;
+            }
+            #vegnonveg-reg-screen,#vegnonveg-upi-screen,#vegnonveg-card-screen{
+              height: auto;
+              width: 19rem;
+            }
+
+            .behance-img{
+              width: 18rem;
+              margin: auto;
+              height: auto;
+            }
+            #landing-page-row .behance-img{
+              width: 16rem;
+              margin: auto;
+              height: auto;
+            }
+            #desktop-icon-row .behance-img{
+              width: 36rem;
+              margin: auto;
+              height: auto;
+            }
+
+            #placeme-logo-row .placeme-img{
+              height: 16rem;
+              width: auto;
+            }
+            .placeme-img{
+              height: 14rem;
+              width: auto;
+            }
+
+          }
+
+          @media screen and (max-width: 912px) {
+            
+            .modal-body{
+              max-height: calc(90vh - 200px);
+            } 
+            .modal__content {
+              width: 800px;
+            }
+            .vegnonveg-img{
+              height: auto;
+              width: 16rem;
+            }
+            #vegnonveg-result-screen, #vegnonveg-product-screen,#vegnonveg-home-screen{
+              height: auto;
+              width: 12rem; 
+            }
+    
+            #vegnonveg-login-screen{
+              height: auto;
+              width: 17.5rem;
+            }
+            #vegnonveg-reg-screen,#vegnonveg-upi-screen,#vegnonveg-card-screen{
+              height: auto;
+              width: 17rem;
+            }
+
+            .behance-img{
+              width: 16rem;
+              margin: auto;
+              height: auto;
+            }
+            #landing-page-row .behance-img{
+              width: 14rem;
+              margin: auto;
+              height: auto;
+            }
+            #desktop-icon-row .behance-img{
+              width: 34rem;
+              margin: auto;
+              height: auto;
+            }
+
+            #placeme-logo-row .placeme-img{
+              height: 16rem;
+              width: auto;
+            }
+            .placeme-img{
+              height: 14rem;
+              width: auto;
+            }
+            #third-project-modal .project-content-row{
+              flex-direction: column;
+              align-items: center;
+              row-gap: 2rem;
+              text-align: center;
+            }
+            #third-project-modal #admin-login-row,
+            #third-project-modal #admin-add-company-row,
+            #third-project-modal #user-login-row,
+            #third-project-modal #user-home-row,
+            #third-project-modal #user-qualification-row,
+            #third-project-modal #user-company-info-row,
+            #third-project-modal #admin-qualification-row,
+            #third-project-modal #admin-schedule-row,
+            #third-project-modal #user-schedule-row
+            {
+              flex-direction: column-reverse;
+            }
+
+          }
+  
+      
+          @media screen and (max-width: 768px) {
+            
+            
+            .modal__content {
+              width: 700px;
+            }
+            .modal-body{
+              padding: 2em 0em;
+            }
+            .project-content-row{
+              margin-bottom: 2rem;
+              display: flex;
+              flex-direction: column;
+              text-align: center;
+              row-gap: 2rem;
+              padding: 0em 0em;
+            }
+
+            #project-content-row-auth,#project-content-row-home,#project-content-row-checkout{
+              display: flex;
+              flex-direction: row;
+            }
+           
+
+            .vegnonveg-img{
+              height: auto;
+              width: 13rem;
+            }
+            #vegnonveg-result-screen, #vegnonveg-product-screen,#vegnonveg-home-screen{
+              height: auto;
+              width: 10rem; 
+            }
+    
+            #vegnonveg-login-screen{
+              height: auto;
+              width: 14.5rem;
+            }
+            #vegnonveg-reg-screen,#vegnonveg-upi-screen,#vegnonveg-card-screen{
+              height: auto;
+              width: 14rem;
+            }
+
+            .behance-img{
+              width: 12rem;
+              margin: auto;
+              height: auto;
+            }
+            #landing-page-row .behance-img{
+              width: 10rem;
+              margin: auto;
+              height: auto;
+            }
+            #desktop-icon-row .behance-img{
+              width: 26rem;
+              margin: auto;
+              height: auto;
+            }
+            
+            }
+      
+          @media screen and (max-width: 640px) {
+            .modal__content {
+              width: 540px;
+            }
+            
+            .vegnonveg-img{
+              height: auto;
+              width: 10rem;
+            }
+            #vegnonveg-result-screen, #vegnonveg-product-screen,#vegnonveg-home-screen{
+              height: auto;
+              width: 7rem; 
+            }
+    
+            #vegnonveg-login-screen{
+              height: auto;
+              width: 10.5rem;
+            }
+            #vegnonveg-reg-screen,#vegnonveg-upi-screen,#vegnonveg-card-screen{
+              height: auto;
+              width: 10rem;
+            }
+
+            #landing-page-row .project-modal-img{
+              flex-direction: column;
+              row-gap: 2rem;
+            }
+            #landing-page-row  .behance-img{
+              width: 14rem;
+            }
+
+          }
+
+          @media screen and (max-width: 540px) {
+            .modal__content {
+              width: 500px;
+            }
+            
+            .vegnonveg-img{
+              height: auto;
+              width: 10rem;
+            }
+            #vegnonveg-result-screen, #vegnonveg-product-screen,#vegnonveg-home-screen{
+              height: auto;
+              width: 6rem; 
+            }
+    
+            #vegnonveg-login-screen{
+              height: auto;
+              width: 10.5rem;
+            }
+            #vegnonveg-reg-screen,#vegnonveg-upi-screen,#vegnonveg-card-screen{
+              height: auto;
+              width: 10rem;
+            }
+            #placeme-logo-row .placeme-img{
+              height: 14rem;
+              width: auto;
+            }
+            .placeme-img{
+              height: 12rem;
+              width: auto;
+            }
+          }
+
+          @media screen and (max-width: 425px) {
+            .modal__content {
+              width: 350px;
+            }
+            
+            .vegnonveg-img{
+              height: auto;
+              width: 8rem;
+            }
+            #vegnonveg-result-screen, #vegnonveg-product-screen,#vegnonveg-home-screen{
+              height: auto;
+              width: 7rem; 
+            }
+
+            #project-content-row-home{
+              display: flex;
+              flex-direction: column;
+            }
+    
+            #vegnonveg-login-screen{
+              height: auto;
+              width: 7rem;
+            }
+            #vegnonveg-reg-screen,#vegnonveg-upi-screen,#vegnonveg-card-screen{
+              height: auto;
+              width: 6.8rem;
+            }
+            .behance-img, #landing-page-row .behance-img{
+              width: 12rem;
+              margin: auto;
+              height: auto;
+            }
+            
+            #desktop-icon-row .behance-img{
+              width: 16rem;
+              margin: auto;
+              height: auto;
+            }
+
+            #first-project-modal .project-modal-img{
+              
+              flex-direction: column;
+              row-gap: 2rem;
+            }
+            #placeme-logo-row .placeme-img{
+              height: 11rem;
+              width: auto;
+            }
+            .placeme-img{
+              height: 9rem;
+              width: auto;
+            }
+            #third-project-modal .project-content-row .project-modal-text{
+              /* word-break: break-all; */
+              /* word-wrap: break-word; */
+              overflow-wrap: anywhere;
+
+              }
+            }
+
+          @media screen and (max-width: 320px) {
+            .modal__content {
+              width: 280px;
+            }
+            
+            
+            
+            #project-content-row-home,#project-content-row-auth,#project-content-row-checkout{
+              display: flex;
+              flex-direction: column;
+            }
+            
+            
+            #desktop-icon-row .behance-img{
+              width: 13rem;
+              margin: auto;
+              height: auto;
+            }
+            
+            #placeme-logo-row .placeme-img{
+              height: 8rem;
+              width: auto;
+            }
+            .placeme-img{
+              height: 6.5rem;
+              width: auto;
+            }
+          }
+
+
 
 
     /* About (Hero Section) */
@@ -600,13 +1018,15 @@ body {
         gap: 2.5rem;
         max-width: 68.75rem;
         margin: auto;
+        margin-top: 8rem;
       }
     
       .hero-img {
-        height: 37.5rem;
-        width: 37.5rem;
-        margin-top: 10rem;
+        height: auto;
+        width: 38rem;
+        /* margin-top: 10rem; */
         margin-left: 1rem;
+        vertical-align: middle;
       }
       
       .bio {
@@ -638,7 +1058,7 @@ body {
           }
 
           .hero-img {
-          
+            width: 30rem;
             margin-left: 4rem;
           }
 
@@ -648,41 +1068,54 @@ body {
         /*changes reflects on screen with a width of 768px and below*/
         .bio {
           
-          margin-right: 4rem;
+          margin-right: 0rem;
           }
 
           .hero-img{
-
-            margin-left: 4rem;
+            width: 25rem;
+            /* margin-left: 4rem; */
+            margin-left: 0rem;
           }
-          
           
         }
   
-      @media screen and (max-width: 540px) {
-        /*changes reflects on screen with a width of 540px and below*/
+      @media screen and (max-width: 640px) {
 
-          .about-section{
-            flex-direction: column;
-          }
+        .hero-img{
+          width: 28rem;
+        }
 
-          .bio {
+        .about-section{
+          flex-direction: column;
           
+        }
+      }
+
+
+     
+
+      @media screen and (max-width: 414px) {
+          
+        .hero-img{
+          width: 20rem;
+        }
+
+        .bio{
           width: 80%;
-          margin: auto;
-          }
-
-          .hero-img{
-
-            width: auto;
-            margin: auto;
-            margin-top: 5rem;
-          }
-
-
-          
+        }
   
       }
+
+      
+      @media screen and (max-width: 280px) {
+          
+        .hero-img{
+          width: 10rem;
+        }
+
+        
+      }
+
 
 
 
@@ -694,6 +1127,7 @@ body {
       justify-content: center;
       max-width: 68.75rem;
       margin: auto;
+      margin-top: 8rem;
       
     }
   
@@ -733,6 +1167,9 @@ body {
         width: 80%;
         margin: 1rem;
 
+        }
+        .more-about-section{
+          margin-top: 4rem;
         }
 
     }
@@ -778,6 +1215,13 @@ body {
     
       padding: 1rem 0%;
 
+    }
+    
+    
+    .contact-icon{
+      height: 25px;
+      width: auto;
+      vertical-align: middle;
     }
 
     @media screen and (max-width: 540px) {
