@@ -255,6 +255,13 @@ body {
         }
       }
 
+      @media screen and (max-width: 280px) {
+        nav{
+          width:280px;
+        }
+      }
+
+
 
       .logo_sadhu:hover + .logo_saurabh {
           
@@ -543,7 +550,7 @@ body {
           left: 0;
           display: flex;
           /* margin: auto; */
-          /* align-items: center; */
+          align-items: flex-end;
           justify-content: center;
           background-color: rgba(54, 54, 54, 0.94);
           /* background-size: cover; */
@@ -575,13 +582,14 @@ body {
       }
 
         .modal__content {
-          margin-top: 7%;
+          margin-top: 8%;
           border-radius: 6px;
           position: relative;
           width: 1100px;
           max-width: 100%;
           background: #fff;
           padding: 2em 2em;
+          
         }
 
         .modal__close {
@@ -670,6 +678,7 @@ body {
             .modal{
               flex-direction: column;
               align-items: center;
+              /* justify-content: flex-end; */
             }
             .modal-body{
               max-height: calc(100vh - 230px);
@@ -719,7 +728,11 @@ body {
           }
 
           @media screen and (max-width: 912px) {
-            
+            /* .modal{
+              flex-direction: column;
+              align-items: center;
+              justify-content:end;
+            } */
             .modal-body{
               max-height: calc(90vh - 200px);
             } 
@@ -915,9 +928,11 @@ body {
             }
           }
 
-          @media screen and (max-width: 425px) {
+          @media screen and (max-width: 432px) {
+            
             .modal__content {
               width: 350px;
+              margin-top: 30%;
             }
             
             .vegnonveg-img{
@@ -1092,7 +1107,7 @@ body {
 
      
 
-      @media screen and (max-width: 414px) {
+      @media screen and (max-width: 432px) {
           
         .hero-img{
           width: 20rem;
