@@ -372,24 +372,27 @@ body {
     }
 
     
-
+/* behance */
   #first-project .project-logo-container{
-    background-image: url("../img/behance/behance-logo.png");
+    background-image: url("https://res.cloudinary.com/saurabhdhuri/image/upload/v1644820055/portfolio/behance/behance-cover.png");
     background-size: 104%;
     background-repeat: no-repeat;
     background-position: center center;
     
   }
 
+/* vegnonveg */
   #second-project .project-logo-container{
-    background-image: url("../img/vegnonveg/project-1.png");
+    background-image: url("https://res.cloudinary.com/saurabhdhuri/image/upload/v1644820266/portfolio/vegnonveg/vegnonveg-cover.png");
     background-size: 104%;
     background-repeat: no-repeat;
     background-position: center center;
     
   }
+
+  /* placeme */
   #third-project .project-logo-container{
-    background-image: url("../img/placeme/project-img.jpg");
+    background-image: url("https://res.cloudinary.com/saurabhdhuri/image/upload/v1644820187/portfolio/placeme/placeme-cover.png");
     background-size: 104%;
     background-repeat: no-repeat;
     background-position: center center;
