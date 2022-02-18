@@ -1121,12 +1121,16 @@ body {
       padding: 1rem 0%;
 
     }
-    
+    .contact-text{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      column-gap: 1rem;
+    }
     
     .contact-icon{
       height: 25px;
       width: auto;
-      vertical-align: middle;
     }
 
     @media screen and (max-width: 540px) {
