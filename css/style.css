@@ -546,7 +546,7 @@ body {
         
 
         
-        .modal-header{
+        .project-header{
           display: flex;
           align-items: center;
           flex-direction: column;
@@ -554,7 +554,7 @@ body {
           text-align: center;
         }
 
-        .modal-body{
+        .project-body{
          
           margin-top: 1rem;
           padding: 2em 2em;
@@ -581,7 +581,7 @@ body {
           justify-content: center;
         }
 
-        .project-modal-text{
+        .project-content-text{
           display: flex;
           /* align-items: center; */
           flex-direction: column;
@@ -595,7 +595,7 @@ body {
           margin-bottom: 2rem;
         }
         
-        #dailyui-project-section .project-modal-img{
+        #dailyui-project-section .project-content-img{
           display: flex;
           flex-direction: row;
           column-gap: 2rem;
@@ -796,7 +796,7 @@ body {
               width: 12rem;
             }
 
-            #landing-page-row .project-modal-img{
+            #landing-page-row .project-content-img{
               flex-direction: column;
               row-gap: 2rem;
             }
@@ -872,7 +872,7 @@ body {
               height: auto;
             }
 
-            #dailyui-project-section .project-modal-img{
+            #dailyui-project-section .project-content-img{
               
               flex-direction: column;
               row-gap: 2rem;
@@ -882,7 +882,7 @@ body {
               width: auto;
             }
             
-            #placeme-project-section .project-content-row .project-modal-text{
+            #placeme-project-section .project-content-row .project-content-text{
               /* word-break: break-all; */
               /* word-wrap: break-word; */
               overflow-wrap: anywhere;
