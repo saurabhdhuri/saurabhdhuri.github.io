@@ -423,7 +423,7 @@ body {
       max-width: 68.75rem;
       margin: auto;
       text-align: center;
-      border: 2px solid white;
+      /* border: 2px solid white; */
     }
     
     .intro-header {
