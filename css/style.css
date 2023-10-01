@@ -373,6 +373,26 @@ body {
       
     }
 
+
+/* legalzard */
+#legalzard-project-card .project-logo-container{
+  background-image: url("https://res.cloudinary.com/saurabhdhuri/image/upload/v1694001377/portfolio/legalzard/img/legalzardbanner.webp");
+  background-size: 104%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  
+}
+
+
+/* wifiqrcode */
+#wifiqrcode-project-card .project-logo-container{
+  background-image: url("https://res.cloudinary.com/saurabhdhuri/image/upload/v1694001431/portfolio/wifiqrcode/img/wifiqrcodebanner.webp");
+  background-size: 104%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  
+}
+
     
 /* behance */
   #dailyui-project-card .project-logo-container{
@@ -522,7 +542,7 @@ body {
         justify-content: space-between;
         }
 
-        #dailyui-project-card .project-logo-container,#vegnonveg-project-card .project-logo-container, #placeme-project-card .project-logo-container{
+        #wifiqrcode-project-card .project-logo-container,#legalzard-project-card .project-logo-container,#dailyui-project-card .project-logo-container,#vegnonveg-project-card .project-logo-container, #placeme-project-card .project-logo-container{
           /* visibility: hidden; */
           height: 50%;
           width: auto;
