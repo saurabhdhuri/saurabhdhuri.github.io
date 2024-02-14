@@ -348,7 +348,7 @@ body {
       
 
 
-      /* Work (Skills) section */
+      /*Main Index Work (Skills) section */
 
     
     
@@ -376,20 +376,22 @@ body {
 
 /* legalzard */
 #legalzard-project-card .project-logo-container{
-  background-image: url("https://res.cloudinary.com/saurabhdhuri/image/upload/v1694001377/portfolio/legalzard/img/legalzardbanner.webp");
+  background-image: url("https://res.cloudinary.com/saurabhdhuri/image/upload/v1702305440/portfolio/legalzard/img/legalzardbanner.webp");
   background-size: 104%;
   background-repeat: no-repeat;
   background-position: center center;
+  background-color: #ffffff;
   
 }
 
 
 /* wifiqrcode */
 #wifiqrcode-project-card .project-logo-container{
-  background-image: url("https://res.cloudinary.com/saurabhdhuri/image/upload/v1694001431/portfolio/wifiqrcode/img/wifiqrcodebanner.webp");
-  background-size: 104%;
+  background-image: url("https://res.cloudinary.com/saurabhdhuri/image/upload/v1702305467/portfolio/wifiqrcode/img/wifiqrcodebanner.webp");
+  background-size:104%;
   background-repeat: no-repeat;
   background-position: center center;
+  background-color: #ffffff;
   
 }
 
@@ -561,7 +563,7 @@ body {
     }
 
 
-    /* Modal for Work Section */
+    /* Modals for Work Section of individual projects */
 
         
 
@@ -622,6 +624,7 @@ body {
           justify-content: center;
         }
         
+        
         .behance-img{
           width: 20rem;
           margin: auto;
@@ -643,6 +646,27 @@ body {
         .placeme-img{
           height: 20rem;
           width: auto;
+        }
+
+        .legalzard-img{
+          height: 24rem;
+          width: auto;
+        }
+
+        .legalzard-cover{
+          width: 100%;
+          height: auto;
+        }
+        
+        .legalzard-mob-img{
+          width: 24rem;
+          height: auto;
+        }
+
+        #legalzard-project-section .project-content-img{
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
         }
         
         
@@ -685,6 +709,16 @@ body {
             .placeme-img{
               height: 16rem;
               width: auto;
+            }
+
+            .legalzard-img{
+              height: 20rem;
+              width: auto;
+            }
+
+            .legalzard-mob-img{
+              width: 18rem;
+              height: auto;
             }
             
 
@@ -742,9 +776,24 @@ body {
             #placeme-project-section #user-company-info-row,
             #placeme-project-section #admin-qualification-row,
             #placeme-project-section #admin-schedule-row,
-            #placeme-project-section #user-schedule-row
+            #placeme-project-section #user-schedule-row,
+
+            #legalzard-project-section #legalzard-wireframe1-row,
+            #legalzard-project-section #legalzard-wireframe3-row,
+            #legalzard-project-section #legalzard-login-row,
+            #legalzard-project-section #legalzard-softwarelicense-row,
+            #legalzard-project-section #legalzard-agreementcompliance1-row,
+            #legalzard-project-section #legalzard-helpbot-row,
+            #legalzard-project-section #legalzard-faq-row,
+            #legalzard-project-section #legalzard-conclusion1-row
+
             {
               flex-direction: column-reverse;
+            }
+
+            .legalzard-mob-img{
+              width: 18rem;
+              height: auto;
             }
 
           }
@@ -792,6 +841,11 @@ body {
               margin: auto;
               height: auto;
             }
+
+            .legalzard-mob-img{
+              width: 16rem;
+              height: auto;
+            }
             
             }
       
@@ -824,6 +878,11 @@ body {
               width: 14rem;
             }
 
+            .legalzard-mob-img{
+              width: 14rem;
+              height: auto;
+            }
+
           }
 
           @media screen and (max-width: 540px) {
@@ -850,6 +909,15 @@ body {
             .placeme-img{
               height: 14rem;
               width: auto;
+            }
+            .legalzard-img{
+              height: 16rem;
+              width: auto;
+            }
+
+            .legalzard-mob-img{
+              width: 12rem;
+              height: auto;
             }
             
           }
@@ -901,12 +969,21 @@ body {
               height: 11rem;
               width: auto;
             }
+            .legalzard-img{
+              height: 11rem;
+              width: auto;
+            }
             
             #placeme-project-section .project-content-row .project-content-text{
               /* word-break: break-all; */
               /* word-wrap: break-word; */
               overflow-wrap: anywhere;
 
+              }
+
+              .legalzard-mob-img{
+                width: 12rem;
+                height: auto;
               }
             }
 
@@ -925,6 +1002,16 @@ body {
             }
             
             .placeme-img{
+              height: 8rem;
+              width: auto;
+            }
+
+            .placeme-img{
+              height: 11rem;
+              width: auto;
+            }
+
+            .legalzard-img{
               height: 8rem;
               width: auto;
             }
